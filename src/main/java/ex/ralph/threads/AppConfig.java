@@ -25,7 +25,7 @@ public class AppConfig {
     @Bean ThreadPoolTaskExecutor taskExecutor() {
         ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
         taskExecutor.setCorePoolSize(4);
-        taskExecutor.setThreadFactory(new NamedThreadFactory("my-tex-%1$d"));
+        taskExecutor.setThreadFactory(new NamedThreadFactory("my-tex-%2$d"));
         return taskExecutor;
     }
 }
